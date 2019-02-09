@@ -7,9 +7,9 @@ key_map = [
     [7, 8, 9, "C"],
     ["*", 0, "#", "D"]
 ]
-rows = [29, 31, 33, 35]
-columns = [37, 36, 38, 40]
-key_matrix = MatrixKeypad(key_map, rows, columns, GPIO())
+gpio_pins_for_rows = [29, 31, 33, 35]
+gpio_pins_for_columns = [37, 36, 38, 40]
+key_matrix = MatrixKeypad(key_map, gpio_pins_for_rows, gpio_pins_for_columns, GPIO())
 
 if __name__ == '__main__':
     while True:

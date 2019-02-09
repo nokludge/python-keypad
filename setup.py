@@ -1,9 +1,11 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='Keymatrix',
     version='0.3',
     packages=['keypad'],
     license='MIT',
-    long_description=open('README.txt').read(),
+    author='Ruslan Walch',
+    long_description=open('README.md').read(),
+    install_requires=['rpi.gpio'],
 )
